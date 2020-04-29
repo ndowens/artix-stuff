@@ -1,2 +1,0 @@
-# rpcsvc-proto
-

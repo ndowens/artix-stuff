@@ -1,2 +1,0 @@
-# pkcs11-helper
-

@@ -1,2 +1,0 @@
-# procinfo-ng
-
