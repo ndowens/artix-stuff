@@ -1,0 +1,30 @@
+# Maintainer: Bruno Pagani <archange@archlinux.org>
+
+pkgname=matterbridge
+pkgver=1.17.4
+pkgrel=1
+pkgdesc="Multi-protocols (IRC/XMPP/Mattermost/Slack/Matrix/etc) bridge"
+arch=(x86_64)
+url="https://github.com/42wim/matterbridge"
+license=(Apache)
+depends=(glibc)
+makedepends=(go-pie git)
+backup=(etc/matterbridge.toml)
+source=(${pkgname}-${pkgver}.tar.gz::"${url}/archive/v${pkgver}.tar.gz")
+sha256sums=('44ffd8ef556d0210f19619477a9981a99b39cf46fb7ee1bf214ea87992a3abc3')
+
+prepare() {
+  cd ${pkgname}-${pkgver}
+  go mod vendor
+}
+
+build() {
+  cd ${pkgname}-${pkgver}
+  go build -v -o ${pkgname} -trimpath -ldflags "-extldflags ${LDFLAGS}" .
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  install -Dm755 ${pkgname} -t "${pkgdir}"/usr/bin/
+  install -Dm644 matterbridge.toml.sample "${pkgdir}"/etc/matterbridge.toml
+}

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/polipo.git
+	branch = master
+	commit = b3a0fd336e287b00ec0e62c88cba6954738bae7e
+	parent = f2042985b9b5c54f1bfd3869ee016dd9ac1b76fc
+	method = merge
+	cmdver = 0.4.1

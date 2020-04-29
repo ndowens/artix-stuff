@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/powerdns.git
+	branch = master
+	commit = 6e182cf337f5ce47ea0ff1ebfec921a3c07c65db
+	parent = 880678c26b33da85d9506bb2ff15a6542d62d6f0
+	method = merge
+	cmdver = 0.4.1

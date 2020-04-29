@@ -1,0 +1,88 @@
+# Maintainer: mr_robot <mr_robot@artixlinux.org>
+pkgname=trafficserver
+pkgver=8.0.7
+pkgrel=1
+pkgdesc="Fast, scalable and extensible HTTP/1.1 and HTTP/2.0 compliant caching proxy server."
+arch=(x86_64)
+url="https://trafficserver.apache.org"
+license=('apache')
+makedepends=('gcc' 'openssl' 'curl' 'automake' 'git')
+depends=('hwloc' 'libunwind' 'pcre' 'tcl')
+optdepends=('clang: build with clang')
+provides=('trafficserver')
+backup=('etc/trafficserver/cache.config'
+	'etc/trafficserver/hosting.config'
+	'etc/trafficserver/ip_allow.config'
+	'etc/trafficserver/logging.yaml'
+	'etc/trafficserver/parent.config'
+	'etc/trafficserver/plugin.config'
+	'etc/trafficserver/records.config'
+	'etc/trafficserver/remap.config'
+	'etc/trafficserver/socks.config'
+	'etc/trafficserver/splitdns.config'
+	'etc/trafficserver/ssl_multicert.config'
+	'etc/trafficserver/ssl_server_name.yaml'
+	'etc/trafficserver/storage.config'
+	'etc/trafficserver/trafficserver-release'
+	'etc/trafficserver/volume.config')
+source=("git+https://github.com/apache/trafficserver.git#tag=${pkgver}-rc0"
+	"configure_ac.patch"
+	"Makefile_am.patch"
+	"Makefile_in.patch"
+	"trafficserver.tmpfiles.conf"
+	"TS.pm")
+sha256sums=('SKIP'
+            '74868f662e06c2fc747b1bb63ee2318d4084f9f29d365219d8054daa3d74528e'
+            'c2c5c446bdb1841ab5fde58e1c23190d45f01eecd14043799b49b817d2f9354e'
+            '44d622fc6f63982697fa021fe4a4267034c1d3097ec80298023bc821eca47fac'
+            '9cbf0c51a32c89e1a5b3f8129e2ad45e5ea5fe1950c0ca4a7de02700ecda0e70'
+            '6903272f10c4ff7ec310985796d229a09a484d2549f831dd61a91eee0ef7fb55')
+
+prepare() {
+	cd "$srcdir/$pkgname"
+	for _patch in "$srcdir"/*.patch ; do
+		git apply --stat "$_patch"
+	done
+	
+	cp "$srcdir"/TS.pm lib/perl/lib/Apache/
+
+	# Re-create build scripts after patch
+	autoreconf -fi
+}
+
+build() {
+	cd "$srcdir/$pkgname"
+	./configure --enable-layout=Arch
+	make
+	cd lib/perl
+	unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
+	export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
+	/usr/bin/perl Makefile.PL
+	make -f Makefile-pl
+}
+
+check() {	
+	cd "$srcdir/$pkgname"
+	make check || :
+	cd lib/perl
+	unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
+	export PERL_MM_USE_DEFAULT=1
+	make -f Makefile-pl test
+}
+
+package() {
+	cd "$srcdir/$pkgname"
+	make DESTDIR="$pkgdir" install
+	install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/"$pkgname"/LICENSE
+	install -Dm644 "$srcdir"/trafficserver.tmpfiles.conf "$pkgdir"/usr/lib/tmpfiles.d/trafficserver.conf
+
+	rm -rf "$pkgdir"/var/log
+	cd lib/perl
+	unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
+	make -f Makefile-pl DESTDIR="$pkgdir" INSTALLDIRS=vendor install
+	
+	# Directories owned by nobody:nobody
+	for _dir in run/trafficserver etc/trafficserver usr/share/trafficserver var/lib/trafficserver ; do
+		chown root:root "$pkgdir/$_dir"
+	done
+}

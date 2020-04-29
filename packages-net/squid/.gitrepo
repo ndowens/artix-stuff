@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesS/squid.git
+	branch = master
+	commit = 7619ef843dfbe26bb0850980290c5b9df73b057e
+	parent = a3518df28f89081778e9f123f900b79cf424d36c
+	method = merge
+	cmdver = 0.4.1

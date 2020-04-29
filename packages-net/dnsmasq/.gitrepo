@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesD/dnsmasq.git
+	branch = master
+	commit = 2bb12f2715541ed9647ffa24a39e7bd0defbc59d
+	parent = 8279dba787072b19ef51aadc03ac621f49d75648
+	method = merge
+	cmdver = 0.4.1

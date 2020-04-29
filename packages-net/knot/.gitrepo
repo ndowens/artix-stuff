@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesK/knot.git
+	branch = master
+	commit = c30b1ce873037be15185fe21b6cfe370697d8f44
+	parent = 33fc81376077d32a4bb539a3e1c157b3688611f9
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesR/rtorrent.git
+	branch = master
+	commit = 767648118224a4299ed7ba4f64d52bafd38564a0
+	parent = 8ae51eb25d1da3e7df2d9216f5dd6167b9b1db3a
+	method = merge
+	cmdver = 0.4.1

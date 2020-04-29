@@ -1,0 +1,34 @@
+# Maintainer: promisedneverland <promisedneverland@disroot.org>
+pkgname=naiveproxy
+pkgver=81.0.4044.92 
+pkgrel=1
+pkgdesc="Make a fortune quietly"
+arch=("x86_64")
+url="https://github.com/klzgrad/naiveproxy"
+license=('BSD')
+depends=('nss')
+makedepends=('git' 'python2' 'ninja' 'curl' 'unzip' 'clang')
+optdepends=('ccache: Speed up compilation ')
+provides=('naiveproxy')
+backup=(etc/naive/config.json)
+source=("$pkgname-$pkgver-$pkgrel.tar.gz"::"https://github.com/klzgrad/naiveproxy/archive/v$pkgver-$pkgrel.tar.gz"
+	"config.json")
+sha256sums=('1d6bb8d7a263aab9eedc46ade5d00ceabdb547fc6530d53c7c8f65a17903e551'
+            '461c6bac05f0fb88f22d60ca5b0f587aeca8ff870363e12348c3b01465f993d9')
+
+prepare() {
+	cd "$pkgname-$pkgver-$pkgrel"/src
+	./get-clang.sh
+}
+
+build() {
+	cd "$pkgname-$pkgver-$pkgrel"/src
+	./build.sh
+}
+
+package() {
+	install -Dm755 "$pkgname-$pkgver-$pkgrel"/src/out/Release/naive "$pkgdir"/usr/bin/naive
+	install -Dm644 config.json "$pkgdir"/etc/naive/config.json
+	install -Dm644 "$pkgname-$pkgver-$pkgrel"/LICENSE "$pkgdir"/usr/share/licenses/"$pkgname"/LICENSE
+}
+

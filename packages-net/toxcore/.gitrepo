@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesT/toxcore.git
+	branch = master
+	commit = e165572edcfbe467a4bb6a151f280f357fa7c0de
+	parent = 15ab370eac1c7edf2cc618eeb27357bc648ed358
+	method = merge
+	cmdver = 0.4.1

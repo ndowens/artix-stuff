@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesJ/jami-daemon.git
+	branch = master
+	commit = bf7051eaebf8d60558a933f488e44bdb1ad7846c
+	parent = 30cfcc4be8b5b8d89497ed3442ab741562332f47
+	method = merge
+	cmdver = 0.4.1

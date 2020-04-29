@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/privoxy.git
+	branch = master
+	commit = 5b55ce970996e74bfccdce665410054daa9beb5d
+	parent = d651cfca9ff7a0779557268ca6729734ce6c2c40
+	method = merge
+	cmdver = 0.4.1

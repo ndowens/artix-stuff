@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesT/trojan.git
+	branch = master
+	commit = bc30d940007f0916dde79acaaf6797d09dfc493b
+	parent = e88007ee4c1ea6d85107f9f45d9342a3b7937206
+	method = merge
+	cmdver = 0.4.1

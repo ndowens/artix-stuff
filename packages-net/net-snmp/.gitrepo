@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesN/net-snmp.git
+	branch = master
+	commit = 123e874f1a00e02609fc9ff03e35c97dcdf76c1e
+	parent = f4e79cbf7d08dd7c740c478d1699f3eaf9ed9caf
+	method = merge
+	cmdver = 0.4.1

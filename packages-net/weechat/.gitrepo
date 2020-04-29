@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesW/weechat.git
+	branch = master
+	commit = d17084321613a96eb4730844aba6da02e48f453b
+	parent = 7a7af5892c18f58561dd32b3e7a544f3f7ff7412
+	method = merge
+	cmdver = 0.4.1

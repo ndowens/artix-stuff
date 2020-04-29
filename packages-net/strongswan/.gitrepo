@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesS/strongswan.git
+	branch = master
+	commit = 4673c0a9b950ac86ab704b86419b0c023d251dd6
+	parent = e0be1657449e6a600bb72d8c1a39d469bbe82d89
+	method = merge
+	cmdver = 0.4.1

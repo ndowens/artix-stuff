@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesM/matterbridge.git
+	branch = master
+	commit = ebf473a1d036a51260c06c993955b13b27d494ab
+	parent = ca469c043934e42a81f90cad1f96181978be1831
+	method = merge
+	cmdver = 0.4.1

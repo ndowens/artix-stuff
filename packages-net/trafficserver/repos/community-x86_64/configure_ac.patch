@@ -1,0 +1,31 @@
+From 49dc9635a00171ef72b4197a094914186e3723fc Mon Sep 17 00:00:00 2001
+From: Nathan Owens <ndowens@artixlinux.org>
+Date: Wed, 22 Apr 2020 18:53:54 -0500
+Subject: [PATCH] configure.ac
+
+---
+ configure.ac | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index a9aa83649..432aa765a 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -830,11 +830,9 @@ AS_IF([test "x$PERL" = "xnot found"],
+ AC_ARG_VAR([DOXYGEN], [full path of Doxygen executable])
+ AC_ARG_VAR([PERL], [full path of Perl executable])
+ 
+-# Check if MakeMaker is available
+-AX_PROG_PERL_MODULES([ExtUtils::MakeMaker], AM_CONDITIONAL([BUILD_PERL_LIB], [true]),
+-                                            AM_CONDITIONAL([BUILD_PERL_LIB], [false])
+-)
+-
++# Disable perl moddule
++BUILD_PERL_LIB=false
++            
+ # Check for GNU-style -On optimization flags
+ AC_MSG_CHECKING([checking whether to auto-set compiler optimization flags])
+ has_optimizer_flags=`echo "$CFLAGS $CXXFLAGS" | ${AWK} '$0 !~ /-O.?/{print "no"}'`
+-- 
+2.26.2
+

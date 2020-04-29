@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesO/opendht.git
+	branch = master
+	commit = fc41b2c8bdf3cb76ccd4cc221c3502b5f9cc32b4
+	parent = 4fb0412cc8ff68f68093270b3d45376f9c73b7f2
+	method = merge
+	cmdver = 0.4.1

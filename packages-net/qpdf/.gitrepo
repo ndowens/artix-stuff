@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesQ/qpdf.git
+	branch = master
+	commit = b503a685312584967204a20bfc78acf43f371bbe
+	parent = c4a715ecb93ca998ead6e9fa4a03d801c96b4541
+	method = merge
+	cmdver = 0.4.1

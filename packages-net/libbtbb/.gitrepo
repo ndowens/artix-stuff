@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libbtbb.git
+	branch = master
+	commit = 836c77ac9730fa23f47764c42aa277ae36b6a994
+	parent = d9dfe322e20427c9ff833407bad1f1e7f9ef206d
+	method = merge
+	cmdver = 0.4.1

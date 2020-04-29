@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesM/matrix-synapse.git
+	branch = master
+	commit = 2858a87f786d80a8811e5b52dd45d94c04394283
+	parent = d266ddaf09933580c526e6dfc22dd6a325010513
+	method = merge
+	cmdver = 0.4.1

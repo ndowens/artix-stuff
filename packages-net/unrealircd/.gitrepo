@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesU/unrealircd.git
+	branch = master
+	commit = 42da5a61cc18802535a993cb141fd4bf94fa1980
+	parent = c43c50387fb2721f1df3e53e80aa646d1e305640
+	method = merge
+	cmdver = 0.4.1

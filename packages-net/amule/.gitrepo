@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesA/amule.git
+	branch = master
+	commit = 836b18ec6aa2b2b0924cb54e0c36979a35d5fa3a
+	parent = 24ddf677a08ce57ece72fd99469e266771eb5d51
+	method = merge
+	cmdver = 0.4.1

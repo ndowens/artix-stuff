@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesR/rclone.git
+	branch = master
+	commit = 0aa13df1dc57b7984ec7f4d2bafc81d8918c2824
+	parent = e8d118f37ffee92f24fe5d05b08c3eb450df94f3
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesH/haproxy.git
+	branch = master
+	commit = f24c3e8e407e6e2862cb5e681fd107415ec11054
+	parent = 8dd932aef21b50e1a1c0aef13e8571949d372228
+	method = merge
+	cmdver = 0.4.1

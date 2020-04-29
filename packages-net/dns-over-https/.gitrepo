@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesD/dns-over-https.git
+	branch = master
+	commit = 785f4a1f297042c013d7fa8e447684548abf79b6
+	parent = 312024dacd8371cd89d49154df9ef94a5bd413d6
+	method = merge
+	cmdver = 0.4.1

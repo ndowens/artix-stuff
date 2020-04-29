@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/pgbouncer.git
+	branch = master
+	commit = 3e63ee733055c93e25705125d217036c8522ec64
+	parent = 8e9681ce6985e4c7670dc9d72b03bf95b14d8cf2
+	method = merge
+	cmdver = 0.4.1

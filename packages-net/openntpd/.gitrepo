@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesO/openntpd.git
+	branch = master
+	commit = 7cf0d1162c02656b0aec64ac672725160643ba05
+	parent = e3ba0b0e36cb81e0117d8999dcfc013c89f36faf
+	method = merge
+	cmdver = 0.4.1

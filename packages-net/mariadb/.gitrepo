@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesM/mariadb.git
+	branch = master
+	commit = 193631ae025ba34b937c82246f2868a2020f96ce
+	parent = aa110bdf2e5b55c68d8c13dbdf10778a59740c4d
+	method = merge
+	cmdver = 0.4.1

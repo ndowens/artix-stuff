@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesN/newsboat.git
+	branch = master
+	commit = f77b75c06abe4cb3702a51087a5737fbd638cf35
+	parent = 2c48e194d1178890b615c650dc34cbd4c00f2f70
+	method = merge
+	cmdver = 0.4.1

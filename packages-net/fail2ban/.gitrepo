@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesF/fail2ban.git
+	branch = master
+	commit = 392c80d5625de16acfc3d0e5b54d48aa34712c9b
+	parent = 343a33dbdabc6f31d69d78dcf2b6ad4d434548c9
+	method = merge
+	cmdver = 0.4.1

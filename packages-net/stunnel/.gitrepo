@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesS/stunnel.git
+	branch = master
+	commit = a7c22175acf30cebfd8db611e01e23971766f6fd
+	parent = 13c67bda4fd678594e5480a915d5653840329f5b
+	method = merge
+	cmdver = 0.4.1

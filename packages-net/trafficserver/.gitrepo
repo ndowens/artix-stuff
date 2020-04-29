@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesT/trafficserver.git
+	branch = master
+	commit = 3e6bf7a24911fd99d0cedcc07b2cbdb69cb06904
+	parent = b7fac27387d962c67791b1f9993ce52038469c34
+	method = merge
+	cmdver = 0.4.1
