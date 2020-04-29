@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libexif.git
+	branch = master
+	commit = c9781e4608d7ec1e8e06f08f98b1a160df5e66fb
+	parent = 39a700aa9f911ecd650339ecc35ddb535f1115b0
+	method = merge
+	cmdver = 0.4.1
