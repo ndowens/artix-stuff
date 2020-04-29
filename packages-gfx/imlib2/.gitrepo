@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesI/imlib2
+	branch = master
+	commit = ebd1d5e1166b18f82c9940b3f4e65fc5c0a945a4
+	parent = 8616f34fc4dafde8fbcad0e33c5bcf38a3021548
+	method = merge
+	cmdver = 0.4.1
