@@ -1,2 +1,0 @@
-# publicsuffix-list
-

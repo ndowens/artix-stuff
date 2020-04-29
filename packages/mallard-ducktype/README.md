@@ -1,2 +1,0 @@
-# mallard-ducktype
-
