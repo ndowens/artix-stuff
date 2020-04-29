@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesL/libjpeg-turbo
+	branch = master
+	commit = 1f2111a5de14f83af8cfaf7cc990c3475e5d3114
+	parent = 4584884ec808ab72e174f27d7f2a6805edf8ade1
+	method = merge
+	cmdver = 0.4.1
