@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesI/iputils.git
+	branch = master
+	commit = 4342a174e5c73cdf8bcd9a9df64c3bf0086e3eb9
+	parent = 91f0023bcfb59cdce755d2126d2c559c542afee8
+	method = merge
+	update = auto
+	cmdver = 0.4.0

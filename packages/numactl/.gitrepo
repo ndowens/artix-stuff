@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesN/numactl.git
+	branch = master
+	commit = 5e75fb9ee7e6c51d54212748f399c8ede527cb5f
+	parent = af2faabffbcf5c84e79483b22ee18f43afaec76e
+	method = merge
+	update = auto
+	cmdver = 0.4.1

@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesD/dosfstools.git
+	branch = master
+	commit = ac1110c4fc213083fbf8ffde4e67c50bfb25872a
+	parent = 02137dbd8334e580eac5763f48d7e591b174f670
+	method = merge
+	update = auto
+	cmdver = 0.4.0

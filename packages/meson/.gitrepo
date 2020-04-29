@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesM/meson.git
+	branch = master
+	commit = ab3dadf2664afb76a12e011dad1327ea628c05ef
+	parent = 3b2f2d95213b12d3a0b01d0465d540fdea59b2fa
+	method = merge
+	update = auto
+	cmdver = 0.4.1

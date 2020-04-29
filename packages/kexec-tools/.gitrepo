@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesK/kexec-tools.git
+	branch = master
+	commit = 83d9778dd48ddc3eb2fa724a8326dd855e8b6719
+	parent = d418fecc602221a660fa6487929c5f586ef5f78f
+	method = merge
+	update = auto
+	cmdver = 0.4.0

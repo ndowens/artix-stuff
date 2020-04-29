@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesI/ifenslave.git
+	branch = master
+	commit = d05f32906dfed8dd255f5087ab3a7ae4d578be63
+	parent = 555f6645599528ae52cc5a68b2b5da38a5c316d9
+	method = merge
+	update = auto
+	cmdver = 0.4.0

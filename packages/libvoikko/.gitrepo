@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libvoikko.git
+	branch = master
+	commit = 7d5e756ecb2baedae5703053fb03e90491f77f4f
+	parent = 7c9a6b9e2dd704dc28c6d17a947f1420df9d3c99
+	method = merge
+	update = auto
+	cmdver = 0.4.0

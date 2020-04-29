@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libiscsi.git
+	branch = master
+	commit = 158b91baf1d3d400b27f0630d7e05fa58fc88942
+	parent = 582b0ba599785e079a07ce39939d0bbec5b18cfe
+	method = merge
+	update = auto
+	cmdver = 0.4.0

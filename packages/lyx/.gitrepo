@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/lyx.git
+	branch = master
+	commit = ae0ca673301b71f9ae3ae83245a63f010405bd36
+	parent = 5288ac59ac8589297226fdc9c9a7b4d4697ec147
+	method = merge
+	update = auto
+	cmdver = 0.4.1

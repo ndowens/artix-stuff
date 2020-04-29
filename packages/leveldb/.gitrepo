@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/leveldb.git
+	branch = master
+	commit = 455c24a9b0ab78eab3438864feaebe06043a1012
+	parent = 0e4846751b3c05ee1d4a54674ca6e601de9ce979
+	method = merge
+	update = auto
+	cmdver = 0.4.0
