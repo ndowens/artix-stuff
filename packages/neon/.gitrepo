@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesN/neon.git
+	branch = master
+	commit = 8055cfdd785cf7830fb384eedcfb75ae54362f6a
+	parent = 893de775f3b696168ab0f376e5cbffdd2a3b2384
+	method = merge
+	update = auto
+	cmdver = 0.4.1

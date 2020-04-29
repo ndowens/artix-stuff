@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesH/hunspell-en.git
+	branch = master
+	commit = 036c0b88501fca97115a68deaf0cfc1865a7d0dd
+	parent = 806f57f80b95b286a07ee165b806a6e506924e31
+	method = merge
+	update = auto
+	cmdver = 0.4.1

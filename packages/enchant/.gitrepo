@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesE/enchant.git
+	branch = master
+	commit = 9360b15e372d109b4aad4663639c94dc47b3b418
+	parent = 513d914f8c8367d81430a7050e3293ec5b06cfee
+	method = merge
+	update = auto
+	cmdver = 0.4.1
