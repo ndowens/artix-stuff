@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesR/ruby.git
+	branch = master
+	commit = 0345d19cae209a8b4415739b2e54f5f72e5317f3
+	parent = c535e3e1ab54e0cd9b16ddcd1d3fba1c19b1ac74
+	method = merge
+	update = auto
+	cmdver = 0.4.1

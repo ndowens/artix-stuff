@@ -1,0 +1,26 @@
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Michal Bozon <michal.bozon__at__gmail.com>
+
+pkgname=libyaml
+pkgver=0.2.4
+pkgrel=1
+pkgdesc="YAML 1.1 library"
+arch=('x86_64')
+url="https://pyyaml.org/wiki/LibYAML"
+license=('MIT')
+source=("https://pyyaml.org/download/libyaml/yaml-$pkgver.tar.gz")
+md5sums=('0532bb32548ee92f1c0328aa8a87dec7')
+
+build() {
+  cd "$srcdir/yaml-$pkgver"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/yaml-$pkgver"
+  make DESTDIR="$pkgdir" install
+  install -Dm644 License "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+

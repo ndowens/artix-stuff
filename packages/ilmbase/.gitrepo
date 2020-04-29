@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesI/ilmbase.git
+	branch = master
+	commit = 508938ebdf219fc335a3f0139661187bc25b89c5
+	parent = 0bd2915019a624d8607dfa34e78e44de29e0c92d
+	method = merge
+	update = auto
+	cmdver = 0.4.0

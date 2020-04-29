@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesA/archlinux-mirrorlist.git
+	branch = master
+	commit = 239fb1770c1f934303eb71a0276eaab23b1e7b92
+	parent = 7f1d16eaf25c57e99a5b18e7d1d4f52cba93f909
+	method = merge
+	update = auto
+	cmdver = 0.4.1

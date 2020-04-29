@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesO/ocaml-topkg.git
+	branch = master
+	commit = 1d42ba499ceec44ed0ea79cc3ea493b706511242
+	parent = 5370c341a838dcce2feb1f719fcb5c5b44433b80
+	method = merge
+	update = auto
+	cmdver = 0.4.1

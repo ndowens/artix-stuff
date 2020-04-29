@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesI/inkscape.git
+	branch = master
+	commit = 4573757bd53d24dea83fcc2ce125ee84d1429f95
+	parent = ce7a9c111bcc4965676a520663570864d3e9002b
+	method = merge
+	cmdver = 0.4.1

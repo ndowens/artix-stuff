@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libfprint.git
+	branch = master
+	commit = 65b10b37cbc067f206f59d2496a424f5f83ba760
+	parent = 0daf89e4c4d3aa03c68df7deefd5c06906b6ae05
+	method = merge
+	cmdver = 0.4.1

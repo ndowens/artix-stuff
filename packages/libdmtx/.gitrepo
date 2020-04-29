@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libdmtx.git
+	branch = master
+	commit = 2f74b4edaedd3a86596f2313c5313de14e129ad0
+	parent = 08d473b7401d2e32ca9b97401c58fcb12bb3a18b
+	method = merge
+	update = auto
+	cmdver = 0.4.0
