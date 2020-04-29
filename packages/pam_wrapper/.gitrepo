@@ -6,7 +6,7 @@
 [subrepo]
 	remote = gitea@gitea.artixlinux.org:packagesP/pam_wrapper.git
 	branch = master
-	commit = 7a5610447659f8686bf579e65cbf03e31532c040
-	parent = db8f5915bafd441f943cdda43e09fb63e4759342
+	commit = 75ce905379f596e2f22b4a11a06ed4ad6625f5bc
+	parent = d27ac79b97613a8f295da69bd73449aca657f36c
 	method = merge
 	cmdver = 0.4.1
