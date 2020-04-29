@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesT/texlive-formatsextra
+	branch = master
+	commit = d1ea19321ac131d9f70fc3bc22064151e42151a5
+	parent = 65ee77e5cf0e1f6c5fdd740cfa4522c344e2e273
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesG/graphviz
+	branch = master
+	commit = 386936be0ff581662ebcc062a3326a8f5bac3b5a
+	parent = db6d15bcd7ef8dd276b6943cc08fc36960e1abe5
+	method = merge
+	cmdver = 0.4.1

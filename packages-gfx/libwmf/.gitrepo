@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesL/libwmf
+	branch = master
+	commit = fc1fc88a86bc6a13346be6527f0e8af5a08529ae
+	parent = 8fb3edfe0a9333f58668ff7d9ce03512cc4fe60e
+	method = merge
+	cmdver = 0.4.1

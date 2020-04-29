@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesT/texlive-fontsextra
+	branch = master
+	commit = 85d98dc8ce2f2bb4954136655b70f540ee8961c7
+	parent = ee28d26afdfb2292e8e6084500a2d1857067034d
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesL/libpagemaker
+	branch = master
+	commit = 0ee3cf44d1e97d2838fe71886c379a9fe99597ad
+	parent = edfe0f83d7a6bbe76a42a5cdb966388f9f7ab896
+	method = merge
+	cmdver = 0.4.1

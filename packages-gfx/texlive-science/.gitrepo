@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/PackagesT/texlive-science
+	branch = master
+	commit = bd7f3f82c58dd0519f146f023e60c1a51248ffb4
+	parent = 24cdce4dee2a2b6977d5065a569783e79f8fafcd
+	method = merge
+	cmdver = 0.4.1
