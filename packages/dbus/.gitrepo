@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesD/dbus.git
+	branch = master
+	commit = 22fd3e1b7bb2b60862fa90d93fc62800e6351fd7
+	parent = 307bf518c097e5e78936d8aa69501e5c5ef19fb3
+	method = merge
+	update = auto
+	cmdver = 0.4.1

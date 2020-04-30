@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesY/yajl.git
+	branch = master
+	commit = 319f8c7dd852b47c1196d8d0d845053fbf1b4c19
+	parent = 8c046befe588ecfb9e26398ef23512d2ce95b230
+	method = merge
+	update = auto
+	cmdver = 0.4.0

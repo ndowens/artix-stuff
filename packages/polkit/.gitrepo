@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/polkit.git
+	branch = master
+	commit = ce46ee5be4506535daae42da32b749f2a69bf208
+	parent = 20a887c563717ec65219820b313be2ef33f07ff6
+	method = merge
+	update = auto
+	cmdver = 0.4.1

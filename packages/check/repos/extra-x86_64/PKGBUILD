@@ -1,0 +1,59 @@
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Jeremy Cowgar <jeremy@cowgar.com>
+
+pkgbase=check
+pkgname=(check check-docs)
+pkgver=0.14.0
+pkgrel=1
+pkgdesc="A unit testing framework for C"
+url="https://libcheck.github.io/check/"
+arch=(x86_64)
+license=(LGPL)
+makedepends=(git texlive-bin texi2html doxygen awk)
+_commit=d86594e5b29d50ddbd6276ab2d2cf5c278f7656c  # tags/0.14.0
+source=("git+https://github.com/libcheck/check#commit=$_commit")
+md5sums=('SKIP')
+
+pkgver() {
+  cd check
+  git describe --tags | sed 's/-/+/g'
+}
+
+prepare() {
+  cd check
+  autoreconf -fvi
+}
+
+build() {
+  cd check
+  ./configure --prefix=/usr --disable-static
+  make all doc/doxygen doc/check_html
+}
+
+check() {
+  cd check
+  # Extremely long
+  #make -k check
+}
+
+package_check() {
+  depends=(awk)
+  optdepends=('check-docs: Documentation')
+  provides=(libcheck.so)
+
+  cd check
+  make DESTDIR="$pkgdir" install
+
+  mv "$pkgdir/usr/share/doc" "$srcdir"
+}
+
+package_check-docs() {
+  pkgdesc+=" (documentation)"
+
+  cp -a check/doc/doxygen/html doc/check/doxygen
+  cp -a check/doc/check_html   doc/check/manual
+
+  mkdir -p "$pkgdir/usr/share"
+  mv doc "$pkgdir/usr/share"
+}

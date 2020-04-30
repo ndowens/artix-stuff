@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://gitea.artixlinux.org/artixlinux/packages
+	branch = master
+	commit = 13db00de4921d89d6bd105af357c3cf9c0a4beaa
+	parent = e4c75c4e8b92afc2ac2d3abeb59f9b53132885f4
+	method = merge
+	cmdver = 0.4.1

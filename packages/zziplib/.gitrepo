@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesZ/zziplib.git
+	branch = master
+	commit = 111316a2ee3ae10978421e2f58272b098dba40c4
+	parent = 8214850f34fbbf3044f18bfc561b1aac6502de00
+	method = merge
+	update = auto
+	cmdver = 0.4.1

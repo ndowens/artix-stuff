@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesO/ovmf.git
+	branch = master
+	commit = fba6842a89cf928d1d046b3cec8a504ae96c8593
+	parent = ae44b4315000b900bdafc624e73463b8b680d8ad
+	method = merge
+	update = auto
+	cmdver = 0.4.1

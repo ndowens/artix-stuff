@@ -1,0 +1,31 @@
+# Maintainer: Ronald van Haren <ronald.archlinux.org>
+# Contributor: eric <eric@archlinux.org>
+
+pkgname=psutils
+pkgver=1.93
+pkgrel=3
+arch=('any')
+pkgdesc="A set of postscript utilities"
+url="https://github.com/rrthomas/psutils"
+license=('GPL3')
+depends=('glibc' 'ghostscript' 'perl-ipc-run3' 'paper')
+provides=('psutils-lprng')
+replaces=('psutils-lprng')
+options=('!makeflags')
+source=("https://github.com/rrthomas/psutils/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
+sha256sums=('48da2ec1be379ac05d0d3d5d7b6229c2fa56dfb41ae811f5120021e832db21f4')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  export CFLAGS="$CFLAGS -DPAPER=\\\"letter\\\" -DUNIX -Wall" \
+  export CCFLAGS="$LDFLAGS"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

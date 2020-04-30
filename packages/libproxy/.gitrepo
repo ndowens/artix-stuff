@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libproxy.git
+	branch = master
+	commit = fd2f2e6c9e30e7258e0ad361e60e0476445669a8
+	parent = 69adb35b85b0b427e50f3cbac6f1c8bc85188d3a
+	method = merge
+	update = auto
+	cmdver = 0.4.1

@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesC/cryptsetup.git
+	branch = master
+	commit = 8c79b0590441825725e0a3c7c18a402988f78fdb
+	parent = 3b0befb77e865031a067eae6f72743ded2255e0f
+	method = merge
+	update = auto
+	cmdver = 0.4.1
