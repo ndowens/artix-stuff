@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libgoom2.git
+	branch = master
+	commit = e9936f26d2f9c7eddd6cf1cc8eaf63215e0665ce
+	parent = e2d917e86045765fd4da51ffa8d80c868f96475a
+	method = merge
+	cmdver = 0.4.0

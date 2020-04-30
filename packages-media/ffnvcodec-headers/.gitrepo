@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesF/ffnvcodec-headers.git
+	branch = master
+	commit = 1a62b079b78926c0320940effafc138cb647a52b
+	parent = 791162f8ede855beccda6e7889d418932193af4f
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libtheora.git
+	branch = master
+	commit = 0f882e47eebe4c39e9fa216d80b84242342439a1
+	parent = 4edc269d1c95b2c71900f0d91097eeb45642b169
+	method = merge
+	cmdver = 0.4.0

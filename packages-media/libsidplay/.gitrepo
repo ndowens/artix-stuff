@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libsidplay.git
+	branch = master
+	commit = cf9805620de6a597496e09858121ae8e2dd6c2db
+	parent = 74f12129ea26dfae98518edcfa848e69ea438be8
+	method = merge
+	cmdver = 0.4.0

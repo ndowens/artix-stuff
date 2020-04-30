@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libomxil-bellagio.git
+	branch = master
+	commit = 57d8cba7be514d5e8d7c2fcda031cac0ae9e37e4
+	parent = 23af57ff55652b3fd2cc6b27ffe17e69ab5dbb0b
+	method = merge
+	cmdver = 0.4.1

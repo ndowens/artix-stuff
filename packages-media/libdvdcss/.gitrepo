@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libdvdcss.git
+	branch = master
+	commit = 14cfa4107eec5073e635b21d688b77259f822ea4
+	parent = 99b481e1b8a0a0d1c8103fcaeac61be2972dda1e
+	method = merge
+	cmdver = 0.4.0

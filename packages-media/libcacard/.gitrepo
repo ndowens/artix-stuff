@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libcacard.git
+	branch = master
+	commit = f26bfbe46cb8cda02c22b13284bdfc89ff935a54
+	parent = 94b7c2a5daf52842311420fa8d67cadce0beca90
+	method = merge
+	cmdver = 0.4.0

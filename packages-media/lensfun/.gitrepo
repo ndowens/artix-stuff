@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/lensfun.git
+	branch = master
+	commit = 9d3c5d255c8b2907c27c1c674de301effe7244f9
+	parent = cbc0d6a36891b56871ce72d15bc9ba19f4a277d9
+	method = merge
+	cmdver = 0.4.1

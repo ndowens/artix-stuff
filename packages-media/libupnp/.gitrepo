@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libupnp.git
+	branch = master
+	commit = b3dba2c475321f2c9569967c984d405f4bad7261
+	parent = cd3921f9483b13bec1345c082a79e4cac32fcde9
+	method = merge
+	cmdver = 0.4.1

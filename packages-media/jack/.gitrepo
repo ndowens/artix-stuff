@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesJ/jack.git
+	branch = master
+	commit = fbe54aeed5b10027657f4e209bc3f94a17a38f02
+	parent = 4a8728923e746868f341969d6693f9ef8ea70f9c
+	method = merge
+	cmdver = 0.4.1

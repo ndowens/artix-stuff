@@ -1,0 +1,40 @@
+# Maintainer: David Runge <dvzrv@archlinux.org>
+# Contributor: judd <jvinet@zeroflux.org>
+
+pkgname=alsa-lib
+pkgver=1.2.2
+pkgrel=1
+pkgdesc="An alternative implementation of Linux sound support"
+arch=('x86_64')
+url="https://www.alsa-project.org"
+license=('LGPL2.1')
+depends=('glibc' 'alsa-topology-conf' 'alsa-ucm-conf')
+provides=('libasound.so' 'libatopology.so')
+source=("https://www.alsa-project.org/files/pub/lib/$pkgname-$pkgver.tar.bz2")
+sha512sums=('d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033')
+
+prepare() {
+  cd "$pkgname-$pkgver"
+  autoreconf -vfi
+}
+
+build() {
+  cd "$pkgname-$pkgver"
+  ./configure --prefix=/usr \
+              --without-debug
+  make
+}
+
+check() {
+  cd "$pkgname-$pkgver"
+  export LD_LIBRARY_PATH="${PWD}/src/.libs/:${LD_LIBRARY_PATH}"
+  make -k check
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+  make DESTDIR="$pkgdir" install -C doc
+  install -vDm 644 {MEMORY-LEAK,TODO,NOTES,ChangeLog,doc/asoundrc.txt} \
+    -t "${pkgdir}/usr/share/doc/${pkgname}"
+}

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesX/xvidcore.git
+	branch = master
+	commit = ba7911bd60b639a64cfa057dbb9041898936b4a1
+	parent = 5fe78a7ac1f0aa66cd37489b347492c0b8fd9559
+	method = merge
+	cmdver = 0.4.0

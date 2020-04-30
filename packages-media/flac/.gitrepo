@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesF/flac.git
+	branch = master
+	commit = 13045c5e1cecfd9f558f473dffd9986c70042b30
+	parent = 08e9cdf898d8f04ea76adf73d632fd56611761a5
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libopenraw.git
+	branch = master
+	commit = f70359a39b589c5dcce076dcfbc457c567f72ab1
+	parent = 0fc0f71d3da4b9150f581abd93a1d5ec11c9f436
+	method = merge
+	cmdver = 0.4.0

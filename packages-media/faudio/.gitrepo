@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesF/faudio.git
+	branch = master
+	commit = 44f164131b4ebe2e3035a11d4d112e225838dd60
+	parent = ac51b255ce710b5ac96ca20d20333b8750fb7e59
+	method = merge
+	cmdver = 0.4.1

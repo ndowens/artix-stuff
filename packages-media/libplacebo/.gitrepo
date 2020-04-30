@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libplacebo.git
+	branch = master
+	commit = 7f4f3953ad5e5c28e587898c8fd04d5fe7a12bab
+	parent = 26bf5244f74846ea31e3c5bf0d9e8440f9d6a49e
+	method = merge
+	cmdver = 0.4.1

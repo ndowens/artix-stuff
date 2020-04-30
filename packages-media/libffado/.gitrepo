@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libffado.git
+	branch = master
+	commit = 8b2f41a2121f88f4b606089c3f115987cca74ffb
+	parent = cdd9a92156512686ca06457231863acc6e4f0546
+	method = merge
+	cmdver = 0.4.0

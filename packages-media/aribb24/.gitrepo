@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesA/aribb24.git
+	branch = master
+	commit = 39f547abd96020f321172bd4328e26ec3fa9f538
+	parent = 014ffc3ad4cf6d5ef9596a04c2a80b5260059606
+	method = merge
+	cmdver = 0.4.0

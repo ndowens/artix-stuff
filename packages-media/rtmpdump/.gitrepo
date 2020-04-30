@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesR/rtmpdump.git
+	branch = master
+	commit = 5918c07cb5df4b934aa413d8933fd21d0fd5ac15
+	parent = 755ed490cb32c7f5f6a99398a0ac454e956708ba
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesC/cldr-emoji-annotation.git
+	branch = master
+	commit = 3dc6b325f2d5b2d760cb5c40e1d9af229a38fa5f
+	parent = 16f1cd8f4ea3f88ae0b4f4f5d4378d9427148ede
+	method = merge
+	cmdver = 0.4.1

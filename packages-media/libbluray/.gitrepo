@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libbluray.git
+	branch = master
+	commit = 489a18919f5e8ec47f117246518f02b873637f0f
+	parent = 19ad1d915020a1b3dd72d691fa5ba30624a54986
+	method = merge
+	cmdver = 0.4.1

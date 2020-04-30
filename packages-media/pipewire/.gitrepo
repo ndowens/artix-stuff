@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/pipewire.git
+	branch = master
+	commit = 744dc8f4b3591af1f473869e108b529fe3fd02f6
+	parent = 1ff43fc407d891a78294a43689c903dd22d589e4
+	method = merge
+	cmdver = 0.4.1

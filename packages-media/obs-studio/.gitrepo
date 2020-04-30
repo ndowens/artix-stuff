@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesO/obs-studio.git
+	branch = master
+	commit = 38723e82bab2d8a4601dc92409eeebdd618b3381
+	parent = f25710783933445f97d503acf3f7cbc105655b84
+	method = merge
+	cmdver = 0.4.1

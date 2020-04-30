@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesF/fluidsynth.git
+	branch = master
+	commit = 02959187269338ce79b77c5d7a61e32567ce5ed0
+	parent = 613ffacdd6aee8a9ef2fd910fd9aa19cf3c790f7
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libavtp.git
+	branch = master
+	commit = aef024d5beab2993ad2793e756607473d72a27ca
+	parent = 60e3c311d34b0d090abebd786437aea93f36363a
+	method = merge
+	cmdver = 0.4.1

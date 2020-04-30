@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesP/portaudio.git
+	branch = master
+	commit = e94151a31f56d8441f0395b7e3b81fc003e2abdc
+	parent = 22cc87aeed21f72c1d6bf1bdec446947651f9c06
+	method = merge
+	cmdver = 0.4.0

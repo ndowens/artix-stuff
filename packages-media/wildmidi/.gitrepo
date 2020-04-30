@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesW/wildmidi.git
+	branch = master
+	commit = cbbe3f3eb3d80ece91f9241ed2911462a82f9a35
+	parent = bf0b95522fe9172de1c97de9e309f337693bf1ea
+	method = merge
+	cmdver = 0.4.1

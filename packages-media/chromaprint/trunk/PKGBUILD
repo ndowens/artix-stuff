@@ -1,0 +1,32 @@
+# Contributor: Wieland Hoffmann <the_mineo@web.de>
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+
+pkgname=chromaprint
+pkgver=1.5.0
+pkgrel=1
+pkgdesc='Library that implements a custom algorithm for extracting fingerprints from any audio source'
+url='https://acoustid.org/chromaprint'
+arch=('x86_64')
+license=('LGPL')
+depends=('ffmpeg')
+makedepends=('cmake' 'git')
+source=("https://github.com/acoustid/chromaprint/releases/download/v${pkgver}/chromaprint-${pkgver}.tar.gz")
+sha256sums=('573a5400e635b3823fc2394cfa7a217fbb46e8e50ecebd4a61991451a8af766a')
+
+#_commit=f2ce2e7ff05cf2b0b5e473fff55f31acf07c6a92 #tag=v1.4.2
+#source=("git+https://github.com/acoustid/chromaprint.git#commit=$_commit")
+
+build() {
+	cd "${srcdir}/${pkgname}-v${pkgver}"
+	cmake \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DBUILD_TOOLS=ON \
+		.
+	make
+}
+
+package() {
+	cd "${srcdir}/${pkgname}-v${pkgver}"
+	make DESTDIR="${pkgdir}" install
+}

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesA/alsa-lib.git
+	branch = master
+	commit = 55f0499da169dadcd8fa0136b537afcac7acaca6
+	parent = 369aa58494bfa06317ca2e8fbab5b71001ade13d
+	method = merge
+	cmdver = 0.4.1

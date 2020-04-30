@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libdvdnav.git
+	branch = master
+	commit = a63891e5783b5fa287197c296018f41441ac7419
+	parent = a410d51f0bf3568a453a6bd17605a139bc9bafa4
+	method = merge
+	cmdver = 0.4.1

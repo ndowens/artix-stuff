@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesA/audiofile.git
+	branch = master
+	commit = fec10f98102906b207c110fa1ade2d12e447c4aa
+	parent = b3bf40797af56d5e68ed03490940bd59ff41258d
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesV/vlc.git
+	branch = master
+	commit = afd459fae7dd213603cb28b04293c2df7524bcda
+	parent = 0e0dc13228a9016091819a336126eca5d3146815
+	method = merge
+	cmdver = 0.4.1

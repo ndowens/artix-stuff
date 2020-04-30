@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libcddb.git
+	branch = master
+	commit = a04775b39d29ff12467f868c97e9b00396558294
+	parent = 847de089a5f647d481c2bc1d8e004d1d2ec65245
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesG/gstreamer.git
+	branch = master
+	commit = 3a82f9c1b37aaa199d9056a1197d5909c62c6a3b
+	parent = 690c2c058ece2a790d9c9c3c1e0adee7f7910367
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libmikmod.git
+	branch = master
+	commit = a7b6cac9d6cc7dfbd0e964c25e17c5a2eb23f4c7
+	parent = 751e488eb7648b36772b2f39addbdc24200192e0
+	method = merge
+	cmdver = 0.4.1

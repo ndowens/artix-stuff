@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesZ/zita-alsa-pcmi.git
+	branch = master
+	commit = 5d0f0bbe0ac3e6c77fff135b1c9eac63cb25eaef
+	parent = c9d7c0c9526fcd09e4f9daea7491e12c5af8bf60
+	method = merge
+	cmdver = 0.4.0

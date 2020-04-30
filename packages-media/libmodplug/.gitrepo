@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesL/libmodplug.git
+	branch = master
+	commit = 0d919ec3d6719ba5d0c8ecf9d46172d210fc9f3f
+	parent = e979c8c570a292f1ad58b9b8a6c5a40b90a99f51
+	method = merge
+	cmdver = 0.4.0

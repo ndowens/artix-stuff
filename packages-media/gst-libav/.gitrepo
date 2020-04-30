@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesG/gst-libav.git
+	branch = master
+	commit = fa551010abfe41d64a7fc05760c074d50538b12f
+	parent = d89e8d8820d1af12c93e146e618dd971560b2767
+	method = merge
+	cmdver = 0.4.0

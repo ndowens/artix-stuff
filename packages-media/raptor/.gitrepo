@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesR/raptor.git
+	branch = master
+	commit = 44c2dcb916f0ad9f20b02130831a61a598e10e18
+	parent = 26a11c884a9e53a2dacc9898542db94edbd318b6
+	method = merge
+	cmdver = 0.4.1

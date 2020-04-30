@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = gitea@gitea.artixlinux.org:packagesZ/zita-resampler.git
+	branch = master
+	commit = 0c66da69bc3adb0309a27f11610ea3c7906100bf
+	parent = 5e2c63711b4069cf4eda8e8da37e95378a0cd2c5
+	method = merge
+	cmdver = 0.4.0

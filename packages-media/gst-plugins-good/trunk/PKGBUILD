@@ -1,0 +1,75 @@
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgbase=gst-plugins-good
+pkgname=(gst-plugins-good gst-plugin-gtk gst-plugin-qmlgl)
+pkgver=1.16.2
+pkgrel=3
+pkgdesc="GStreamer open-source multimedia framework good plugins"
+url="https://gstreamer.freedesktop.org/"
+arch=(x86_64)
+license=(LGPL)
+depends=(libpulse libsoup gst-plugins-base-libs wavpack aalib taglib libdv libshout libvpx
+         gdk-pixbuf2 libcaca libavc1394 libiec61883 libxdamage v4l-utils cairo libgudev speex flac
+         libraw1394 lame mpg123 twolame)
+makedepends=(python gtk-doc git meson jack2 gtk3 qt5-{declarative,x11extras,wayland})
+#checkdepends=(gst-plugins-base xorg-server-xvfb)
+options=(!emptydirs)
+_commit=ce0723527aa37d5f4d19ef8021c0b2eb8f83b08d  # tags/1.16.2^0
+source=("git+https://gitlab.freedesktop.org/gstreamer/gst-plugins-good.git#commit=$_commit")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/-/+/g'
+}
+
+prepare() {
+  cd $pkgname
+}
+
+build() {
+  arch-meson $pkgname build \
+    -D gobject-cast-checks=disabled \
+    -D glib-asserts=disabled \
+    -D glib-checks=disabled \
+    -D package-name="GStreamer Good Plugins (Artix Linux)" \
+    -D package-origin="https://www.artixlinux.org/"
+  ninja -C build
+}
+#https://bugs.archlinux.org/task/65827
+#Reports check can be flaky due to trying to use
+#stream from internet radio source. So disable check
+#check() (
+#  mkdir -p -m 700 "${XDG_RUNTIME_DIR:=$PWD/runtime-dir}"
+ # export XDG_RUNTIME_DIR
+
+ # xvfb-run -s '-screen 0 1920x1080x24 -nolisten local +iglx -noreset' \
+ #   meson test -C build --print-errorlogs
+#)
+
+package_gst-plugins-good() {
+  depends+=(libjack.so)
+
+  DESTDIR="$pkgdir" meson install -C build
+
+  for _x in gtk qmlgl; do
+    mkdir -p "$_x/lib/gstreamer-1.0"
+    _f="lib/gstreamer-1.0/libgst${_x}.so"
+    mv "$pkgdir/usr/$_f" "$_x/$_f"
+  done
+}
+
+package_gst-plugin-gtk() {
+  pkgdesc="GStreamer open-source multimedia framework gtk plugin"
+  depends=(gst-plugins-base-libs gtk3)
+
+  mv gtk "$pkgdir/usr"
+}
+
+package_gst-plugin-qmlgl() {
+  pkgdesc="GStreamer open-source multimedia framework qmlgl plugin"
+  depends=(gst-plugins-base-libs qt5-{declarative,x11extras,wayland})
+
+  mv qmlgl "$pkgdir/usr"
+}
