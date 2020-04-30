@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://gitea.artixlinux.org/artixlinux/packages-net
 	branch = master
-	commit = 79fe767713bbcce53248be9b1dd4b8afbde562be
-	parent = 562cbce8247415cd8d2f876c8f4cd68965000440
+	commit = b275cb0d5eceb551de37f7ac27a966a95c0d0706
+	parent = 31698da3ef85df850a6d2fde7ed0b837dfea7a47
 	method = merge
 	cmdver = 0.4.1
